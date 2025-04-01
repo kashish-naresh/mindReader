@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number in Mind Game</title>
+    <link rel="stylesheet" href="mindReader.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number in Mind</h1>
+
+      <div class="welcome-screen">
+        <p>
+          Think of a number between 1 and 63.<br />
+          Six cards will be displayed. After<br />
+          the last one, your number will be revealed.
+        </p>
+        <button class="start-btn">Start Game</button>
+      </div>
+
+      <div class="card-screen">
+        <div class="card">
+          <div class="card-title">CARD <span id="card-number">1</span></div>
+          <div class="numbers-grid" id="numbers-grid"></div>
+          <div class="progress">Card <span id="current-card">1</span> of 6</div>
+          <div class="buttons">
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+            <button class="restart-btn">Restart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-screen">
+        <h2>THE NUMBER YOU WERE THINKING OF WAS</h2>
+        <div class="result-number" id="result-number">0</div>
+        <button class="restart-btn">Play Again</button>
+      </div>
+    </div>
+
+    <script src="mindReader.js"></script>
+  </body>
+</html>
